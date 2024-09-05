@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olx Clone</title>
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="same__color">
+            <div class="small__navbar">
+                <div class="second-navbar__logo">
+                    <a href="./index.html">
+                        <svg viewBox="0 0 36.289 20.768" alt="Logo">
+                            <path
+                                d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="actions__links">
+                    <!-- <a class="motor-property-btn" href="https://www.olx.com.pk/motors/"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="88.9" height="33" alt="OLX Motors" class="_1a6eed8f">
+                        <defs>
+                            <linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+                                <stop offset="0" stop-color="#ddd"></stop>
+                                <stop offset="1" stop-color="#fff"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path stroke="rgba(0,0,0,0)"
+                            d="M40 20.5h1v-6.2l3 6.2h.6l2.8-6.2v6.2h1v-8.3h-1L44.1 19l-3-6.8H40zm18.3-4.2A4.1 4.1 0 0 0 54 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.3 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3.2 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3.2-3.3zm8.2-3.3h2.3v7.5h1V13H65v-1h-5.7zm15 3.3A4.1 4.1 0 0 0 70 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.2 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3-3.3zm13.2-1.7c0 1-.6 1.6-1.8 1.6h-1.6V13h1.6c1.2 0 1.8.6 1.8 1.6zM75.7 12v8.4h1V17H78l2 3.4h1.3l-2-3.5a2.4 2.4 0 0 0 2-2.4c0-1.4-1-2.5-3-2.5zm12.7 6c0-3-4.5-1.7-4.5-3.8 0-1 .7-1.4 1.6-1.4a1.5 1.5 0 0 1 1.6 1.2h1.2a2.5 2.5 0 0 0-2.7-2.1c-1.7 0-2.8 1-2.8 2.3 0 3 4.5 1.7 4.5 4 0 .7-.6 1.3-1.7 1.3a1.5 1.5 0 0 1-1.7-1.4h-1.2c0 1.4 1.3 2.4 3 2.4a2.5 2.5 0 0 0 2.7-2.4z">
+                        </path>
+                        <path fill="url(#a)" d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z" opacity=".6">
+                        </path>
+                        <path
+                            d="M24.7 13.5a1.1 1.1 0 0 0-1.4-.7l-.6.2-1-2.2-.4-.1a16 16 0 0 0-4.8-.7 12 12 0 0 0-4.3.7l-.3.1-1 2.3h-.5a1.1 1.1 0 0 0-.6 2v.2a4 4 0 0 0-.4 1.5v4a2.1 2.1 0 0 0 0 .6.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .8-.5 2.1 2.1 0 0 0 0-.7v-.3a47.1 47.1 0 0 0 8.3 0v.3a2.1 2.1 0 0 0 0 .7.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .7-.5 2.1 2.1 0 0 0 .1-.7v-4a3.7 3.7 0 0 0-.4-1.5V15h.3a1.1 1.1 0 0 0 .7-1.5zm-12.2-2.1a11.3 11.3 0 0 1 4-.6 15.2 15.2 0 0 1 4.6.6l.9 1.8a17.6 17.6 0 0 1-4.3.4H17a28.2 28.2 0 0 1-5.4-.3zm-.6 9.3a2.2 2.2 0 0 1 0 .4h-1.7a2.2 2.2 0 0 1 0-.4V20a1 1 0 0 0 .3 0l1.4.2v.4zm11.4 0a2.2 2.2 0 0 1 0 .4h-1.6a2.2 2.2 0 0 1 0-.4v-.4H23a1 1 0 0 0 .4-.2zm.5-6.5l-1.2.4.5 1a3 3 0 0 1 .3 1.2V18l-.1.7c0 .3-.2.7-.5.7-3 .3-4.5.5-6 .5s-3-.2-6.2-.5c-.2 0-.3-.3-.4-.6V18a17 17 0 0 1 0-1 3.2 3.2 0 0 1 .3-1.3l.5-1-1-.2a.3.3 0 0 1-.2-.4.3.3 0 0 1 .4-.3l1.1.4a23.6 23.6 0 0 0 5 .3h1.4a17.9 17.9 0 0 0 4.6-.5h.3l1-.4a.3.3 0 0 1 .4.3.3.3 0 0 1-.2.4z">
+                        </path>
+                        <path
+                            d="M12 16a1.2 1.2 0 1 0 1.1 1.2A1.2 1.2 0 0 0 12 16zm0 1.6a.4.4 0 1 1 .3-.4.4.4 0 0 1-.4.4zm9.6-1.6a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2zm0 1.6a.4.4 0 1 1 .5-.4.4.4 0 0 1-.5.4zm-7.8.2h6v.8h-6z">
+                        </path>
+                    </svg></a>
+                    <!-- <a href="https://www.olx.com.pk/properties/" class="ac22b0e1"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="97.25" height="33" alt="OLX Property"
+                        class="_1a6eed8f">
+                        <defs>
+                            <linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+                                <stop offset="0" stop-color="#ddd"></stop>
+                                <stop offset="1" stop-color="#fff"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path stroke="rgba(0,0,0,0)"
+                            d="M41.1 16.64v-3.07h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.78 1.52zm4.5-1.52c0-1.37-.93-2.45-2.9-2.45H40v8.36h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.82.01c0 .94-.54 1.6-1.77 1.6h-1.6v-3.16h1.6c1.25 0 1.77.61 1.77 1.57zm-4.47-2.46v8.36h1.1v-3.42h1.31l2 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm15.3 4.18a4.12 4.12 0 0 0-4.2-4.28 4.13 4.13 0 0 0-4.2 4.28 4.13 4.13 0 0 0 4.2 4.27 4.12 4.12 0 0 0 4.2-4.27zm-7.3 0a3.05 3.05 0 0 1 3.1-3.33 3.05 3.05 0 0 1 3.07 3.33 3.06 3.06 0 0 1-3.08 3.32 3.06 3.06 0 0 1-3.09-3.32zm9.82-.2v-3.08h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.77 1.52zm4.5-1.53c0-1.36-.93-2.44-2.9-2.44h-2.7v8.35h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.85-2.46h-4.5v8.37h4.5v-.9h-3.4v-2.88h3.04v-.9h-3.04v-2.8h3.4zm6.14 2.48c0 .93-.54 1.6-1.78 1.6h-1.6v-3.17h1.6c1.25 0 1.78.61 1.78 1.57zm-4.48-2.47v8.36h1.1v-3.42h1.32l1.98 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm6.78.9h2.29v7.46h1.1v-7.47h2.27v-.89h-5.66zm9.04 4.3v3.16h1.1v-3.15l2.72-5.2h-1.2l-2.07 4.23-2.07-4.24h-1.2z">
+                        </path>
+                        <path fill="url(#a)" d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z" opacity=".57">
+                        </path>
+                        <path
+                            d="M25.03 21.92v-9.35l-4.99-1.66v1.05l4 1.33v8.59h-5V7.85h-8.38v14.08h-.4v1h15.17v-1zm-6.98-11.68v11.68h-6.4V8.84h6.4z">
+                        </path>
+                        <path
+                            d="M15.17 10.3h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 1.6h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 2.42h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 1.62h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 2.42h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm8.87-4.04h.8v.81h-.8zm-1.62 0h.8v.81H20zm1.62 1.62h.8v.8h-.8zm-1.62 0h.8v.8H20zm1.62 2.42h.8v.8h-.8zm-1.62 0h.8v.8H20z">
+                        </path>
+                    </svg></a>
+                </div>
+            </div>
+            <div class="second__navbar">
+                <div class="select_option">
+                    <i class="fa-solid fa-search"></i>
+                    <div class="dropdown">
+                        <label for="country-select">Select Country:</label>
+                        <!-- <div class="dropdown"> -->
+                        <!-- <button class="dropbtn"></button>
+                            <div class="dropdown-content">
+                                <a href="#">United States</a>
+                                <a href="#">Canada</a>
+                                <a href="#">United Kingdom</a>
+                                <a href="#">Australia</a> -->
+                        <!-- </div>  -->
+                        <select id="country-select" name="countries">
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">Pakistan</option>
+                            <option value="au">Australia</option>
+                        </select>
+                    </div>
+                    <!-- <input type="text" placeholder="Choose Country">  -->
+
+                    <div class="dropdown">
+                        <!-- <button class="dropbtn"></button> -->
+                        <div class="dropdown-content">
+                            <!-- <a href="#">United States</a>
+            <a href="#">Canada</a>
+            <a href="#">United Kingdom</a>
+            <a href="#">Australia</a> -->
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="search__bar">
+                    <input type="text" id="txt" placeholder="Find Cars, Mobile Phones and more...">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+                <div class="login__sell" id="login__sell">
+                    <button href="" class="login__btn">Login</button>
+                    <button class="sell__btn">+ Sell</button>
+                </div>
+            </div>
+        </div>
+        <div class="third__navbar">
+            <div class="select__itself">
+
+                <!-- <p>All category</p>  -->
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="#">Vehicles</a>
+                        <a href="#">Property</a>
+                        <a href="#">Electronics & Appliances</a>
+                        <a href="#">Furniture & Home Decor</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Services</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Pets</a>
+                        <a href="#">Books, Sports & Hobbies</a>
+                        <a href="#">Kids</a>
+                        <a href="#">Business & Industrial</a>
+                    </div>
+                </div>
+            </div>
+            <div class="links" id="links">
+                <li>Mobile Phones</li>
+                <li>Cars</li>
+                <li>Motorcycles</li>
+                <li>Houses</li>
+                <li>Video-Audios</li>
+                <li>Tablets</li>
+                <li>Land & Plots</li>
+            </div>
+        </div>
+        <!-- <div class="dropdown">
+            <button class="dropbtn">Categories</button>
+            <div class="dropdown-content">
+                <a href="#">Vehicles</a>
+                <a href="#">Property</a>
+                <a href="#">Electronics & Appliances</a>
+                <a href="#">Furniture & Home Decor</a>
+                <a href="#">Jobs</a>
+                <a href="#">Services</a>
+                <a href="#">Fashion</a>
+                <a href="#">Pets</a>
+                <a href="#">Books, Sports & Hobbies</a>
+                <a href="#">Kids</a>
+                <a href="#">Business & Industrial</a>
+            </div>
+        </div>  -->
+
+        <div class="slide">
+            <img src="https://images.olx.com.pk/thumbnails/437508562-800x600.webp" alt="">
+        </div>
+        <h2 class="heading">All categories</h2>
+        <div>
+            <div class="_948d9e0a e0339389 _74d21682">
+                <a href="">
+                    <div class="categories-box">
+
+                        <img src="https://www.olx.com.pk/assets/mobiles.8c768c96bfde33f18fcf5af2a8b9cf71.png"
+                            class="dab7f421" alt="Mobiles">
+
+                        <h4 class="af339672">Mobiles</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/vehicles.29fb808d5118f0db56f68a39ce5392e2.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Vehicles</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/property-for-sale.e3a00dbfdaa69fe5f713665f1069502f.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Property for Sale</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/property-for-rent.8436595fbaa90d47f0178006f57090a8.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Property for Rent</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/electronics-home-appliances.46e034dd8adca44625c2c70e4d1b5984.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Electronics & Home Appliances</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/bikes.4dcd02c49b2b83aa5b4d629d1e2b383e.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Bikes</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/business-industrial-agriculture.704a6ffb9081bc94b11c102cc613670f.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Business, Industrial & Agriculture</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/services.dc6aef196c0403dc61b0ee813f66fa5b.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Services</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/jobs.79e6136dda02111cf8e7afe26b9e0f93.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Jobs</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/animals.62d396e85f7523dbc8ff23889fdd5c31.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Animals</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/furniture-home-decor.66bcf157a53ea4c736a5b0af41219475.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Furniture & Home Decor</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/fashion-beauty.dd2cf7638c29b0e5c084a6673dd94dd7.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Fashion & Beauty</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/books-sports-hobbies.6fee8d841b332d65a10f050f4a2ee1c8.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Books, Sports & Hobbies</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="categories-box">
+                        <div class="categories-img">
+                            <img src="https://www.olx.com.pk/assets/kids.cd8d8864804f1c35dd6a7df68268a48d.png"
+                                class="dab7f421" alt="Mobiles">
+                        </div>
+                        <h4 class="af339672">Kids</h4>
+                    </div>
+                </a>
+            </div>
+            <h2 class="heading">Mobile Phones</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://92mobiles.pk/wp-content/uploads/2022/07/apple-iphone-11-pro-max-64gb-space-grey-renewed.jpg"
+                                width="30px" alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Iphone 11 pro max</h4>
+                                </div>
+                                <h2>Rs 50,000</h2>
+                            </div>
+                            <h5>Allama Iqbal Town, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://img.drz.lazcdn.com/static/pk/p/5fa19b972f5e764f8d710b2d1edac24f.png_720x720q80.png"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>INFINIX SMART 8 BOX PACK</h4>
+                                </div>
+                                <h2>Rs 21,900</h2>
+                            </div>
+                            <h5>Township, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://media.wisemarket.com.pk/variant/inventory_24861.webp" alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>13 PRO MAX (HK) PTA APPROVED</h4>
+                                </div>
+                                <h2>Rs 290,000</h2>
+                            </div>
+                            <h5>Saddar, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://www.mega.pk/items_images/Google+Pixel+7+Pro+12GB+Ram+256GB+Storage+Non+PTA+Price+in+Pakistan%2C+Specifications%2C+Features_-_23796.webp"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Pixel 7 Pro dual Approved</h4>
+                                </div>
+                                <h2>Rs 123,000</h2>
+                            </div>
+                            <h5>I-10, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading">Cars</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://cache2.pakwheels.com/system/car_generation_pictures/5327/original/hs.jpg?1600434088"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>MG HS TROPHY 2021</h4>
+                                </div>
+                                <h2>Rs 6,700,000</h2>
+                            </div>
+                            <h5>MPCHS - Multi Gardens, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://cdn.wheel-size.com/automobile/body/suzuki-hustler-2020-2022-1626170065.1608958.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Suzuki Hustler 2022</h4>
+                                </div>
+                                <h2>Rs 3,980,000</h2>
+                            </div>
+                            <h5>F-10, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://global.toyota/pages/news/images/2019/11/05/1100/rendition/20191105_02_32_W610_H407.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Toyota Raize G 2020</h4>
+                                </div>
+                                <h2>Rs 5,275,000</h2>
+                            </div>
+                            <h5>Mall Road, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://imgd.aeplcdn.com/1200x900/n/cw/ec/27074/civic-exterior-right-front-three-quarter-148156.jpeg?q=80"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Honda Civic VTi Oriel Prosmatec</h4>
+                                </div>
+                                <h2>Rs 4,625,000</h2>
+                            </div>
+                            <h5>DHA Defence, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading">Bikes & Motorcycles</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://imgd.aeplcdn.com/1280x720/n/cw/ec/123865/g310-rr-right-front-three-quarter-2.jpeg?isig=0"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>BMW s1000 RR</h4>
+                                </div>
+                                <h2>Rs 1,250,000</h2>
+                            </div>
+                            <h5>McLeod Road, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://alfamall.com/pub/media/catalog/product/cache/1a89dbb01e019c7ecb20ce1cadff1320/y/a/yamaha_125z_dx_b_-_black_1_1.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Yamaha Dx Same As New For Sale</h4>
+                                </div>
+                                <h2>Rs 290,000</h2>
+                            </div>
+                            <h5>GT Road, Muridike</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://cache1.pakwheels.com/system/bike_model_pictures/1329/original/1.jpg?1665554161"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Yamaha YBR 125 black 2023</h4>
+                                </div>
+                                <h2>Rs 390,000</h2>
+                            </div>
+                            <h5>Circular Road, Sialkot</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://i.ytimg.com/vi/1P7JWYutkgs/sddefault.jpg" alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Shelby 400cc 2022 For Sale</h4>
+                                </div>
+                                <h2>Rs 920,000</h2>
+                            </div>
+                            <h5>G-15/1, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading">Houses</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://i.pinimg.com/originals/eb/f1/a8/ebf1a8de06d61e627ad6366d25740d38.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>7 Marla Full Lavish House For Sale</h4>
+                                </div>
+                                <h2>Rs 38,000,000</h2>
+                            </div>
+                            <h5>Eden Garden Executive - Block E faisalabad</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://i.pinimg.com/736x/67/f0/6e/67f06e5036e07ad622b190ce3f168729.jpg" alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>8 MARLA LUXURY BRAND NEW</h4>
+                                </div>
+                                <h2>Rs 27,500,000</h2>
+                            </div>
+                            <h5>F-17, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://img.onmanorama.com/content/dam/mm/en/lifestyle/decor/images/2023/6/1/house-middleclass.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>1 KANAL PRIME LOCATION </h4>
+                                </div>
+                                <h2>Rs 53,500,000</h2>
+                            </div>
+                            <h5>UET Housing Society - Block B, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/3799-flamingo-ave-siesta-key-print-005-14-flamingo-ave-sarasota-fl-4200x2799-300dpi-1675178841.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>10 marla brand new house</h4>
+                                </div>
+                                <h2>Rs 45,000,000</h2>
+                            </div>
+                            <h5>Bahria Town - Janiper Block, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading">Video-Audios</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://m.media-amazon.com/images/I/71XacjngH+L._AC_UF894,1000_QL80_.jpg" alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Walkie Talkie</h4>
+                                </div>
+                                <h2>Rs 10,000</h2>
+                            </div>
+                            <h5>Saddar Town, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://www.smartworldgadgets.pk/cdn/shop/products/S46c0988909044abe8d8a174d2ba835b9T.jpg_640x640Q90.jpg_a11c4c99-f0c2-446e-af18-927ceab74d01_800x800.webp?v=1705579009"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Air 31 Wireless earbuds</h4>
+                                </div>
+                                <h2>Rs 1,250</h2>
+                            </div>
+                            <h5>Mehmoodabad, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://cdn.homeshopping.pk/product_images/b/394/blu_ray_anlagen_samsung_ht_h7750wm_bild_1410344635__34559_zoom.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Samsung Home Theater</h4>
+                                </div>
+                                <h2>Rs 66,666</h2>
+                            </div>
+                            <h5>PWD Colony, Rawalpindi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src=" https://images.priceoye.pk/audionic-airbud-425-pakistan-priceoye-3fexz.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Audionic Airbuds 550</h4>
+                                </div>
+                                <h2>Rs 3,699</h2>
+                            </div>
+                            <h5>G-13/1, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading">Tablets</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://cdn.mos.cms.futurecdn.net/JGnbU9b4SeRgaWcbDGThFL-1200-80.jpg" alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>IPAD PRO 12.9 5TH GENERATION</h4>
+                                </div>
+                                <h2>Rs 320,000</h2>
+                            </div>
+                            <h5>PECHS, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipad-pro-spring21_hero_04202021_big.jpg.large.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>ipads, ipad m1 , ipad pro, ipad air</h4>
+                                </div>
+                                <h2>Rs 110,000</h2>
+                            </div>
+                            <h5>M.A. Jinnah Road, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://hf-store.pk/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-13-at-5.30.58-AM-2.jpeg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>TCL TAB Disney Edition</h4>
+                                </div>
+                                <h2>Rs 15,499</h2>
+                            </div>
+                            <h5>Saddar Town, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://techhub.osu.edu/sites/default/files/products/ipad_mini_wi-fi_lineup_screen_usen-2.png"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>ipad mini 6</h4>
+                                </div>
+                                <h2>Rs 115,000</h2>
+                            </div>
+                            <h5>PWD Road, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading">Land & Plots</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://www.jaageer.com/property-images/120-sqyd-residential-plot-for-sale-in-fibbi-town-karachi-fibbi-town-49324-515130143.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>120 yard Plot for Sale</h4>
+                                </div>
+                                <h2>Rs 5,500,000</h2>
+                            </div>
+                            <h5>Saima Arabian Ranches, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://media.zameen.com/thumbnails/261227021-240x180.jpeg" alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>300 Square Yard Corner Sun Face</h4>
+                                </div>
+                                <h2>Rs 7,500,000</h2>
+                            </div>
+                            <h5>D-18, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://www.bahriatownconsultant.com/wp-content/uploads/Plot-For-Sale-In-Bahria-Town-Karachi-848x530.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>240 Yards Plot, Gulshan-E-Maymar</h4>
+                                </div>
+                                <h2>Rs 14,000,000</h2>
+                            </div>
+                            <h5>Gulshan-e-Maymar - Sector S, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://www.nanubhaiproperty.com/images/thumbs/property/449714_1100-sq-ft-residential-plot-land-for-sale-kolar-main-road-in-bhopal_800.jpeg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>F-17 corner plot for sale</h4>
+                                </div>
+                                <h2>Rs 18,000,000</h2>
+                            </div>
+                            <h5>F-17/2, Islamabad</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="heading">Jobs</h2>
+            <div class="card-flex">
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn75rB-bE5Fne5I76oY4rSel8LKwRXgMlm4Q&s"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Part-Time & Full-Time jobs</h4>
+                                </div>
+                            </div>
+                            <h5>Saima Arabian Ranches, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://images.ctfassets.net/co0pvta7hzrh/1L99if0Kt6VeCwBlw8rinS/81b28fa7f624ba280313a6e729d34a8a/chef-job-application-form-template-hero.jpeg?w=3840&fm=webp"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>chef Helper</h4>
+                                </div>
+                            </div>
+                            <h5>Quaid-e-Azam Industrial Estate, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230216153704/What's-a-Social-Media-Manager.png"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>SOCIAL MEDIA MANGER</h4>
+                                </div>
+                            </div>
+                            <h5>Kalma Chowk, Lahore</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container" id="cards">
+                    <div class="card">
+                        <div class="img__featured">
+                            <img src="https://media.foundit.in/career-advice/wp-content/uploads/2023/05/Part-time-Online-Job-Trends-1.jpg"
+                                alt="">
+                            <p class="featured">featured</p>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-gap">
+                                <div class="name__heart">
+                                    <h4>Part time Online job</h4>
+                                </div>
+                            </div>
+                            <h5>DHA Defence, Karachi</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="one">
+                <h1 class="heading1">Free ChatGPT Extension</h1>
+                <p class="parag">ChatGPT Browser Plugin as your AI assistant on any page</p>
+            </div>
+
+            <footer>
+                <div class="footer_the_olx_app_section">
+                    <img src="./images/mobile.webp" alt="">
+                    <!-- <div class="one"></div> -->
+                    <div class="footer_olx_content">
+                        <h1 class="headi">Try The Olx App</h1>
+                        <h3 class="mead">
+                            Buy, sell and find just about anything using the app on your mobile.
+                        </h3>
+                    </div>
+                    <div class="line"></div>
+                    <div class="get__your_app_today">
+                        <h4 class="headf">Get Your App Today</h4>
+                        <div class="apps">
+                            <img src=" https://static.vecteezy.com/system/resources/previews/021/496/284/original/apple-app-store-icon-logo-symbol-white-design-mobile-illustration-with-black-background-free-vector.jpg"
+                                height="50px" alt="">
+                            <img src=" https://static.vecteezy.com/system/resources/previews/021/496/110/original/google-play-mobile-symbol-logo-with-name-design-software-phone-illustration-with-black-background-free-vector.jpg"
+                                height="50px" alt="">
+                            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ss2Zy4BdUI2-oMyPGO3ZslTv0j8G0s-tgw&s"
+                                width="220px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__real">
+                    <div class="footer__content">
+                        <div class="lists">
+
+                            <ul>
+                                <h4>POPULAR Category</h4>
+                                <li>Cars</li>
+                                <li>Flats for rent</li>
+                                <li>Mobile Phones</li>
+                                <li>Jobs</li>
+                            </ul>
+                            <ul>
+                                <h4>POPULAR Category</h4>
+                                <li>Cars</li>
+                                <li>Flats for rent</li>
+                                <li>Mobile Phones</li>
+                                <li>Jobs</li>
+                            </ul>
+                            <ul>
+                                <h4>POPULAR Category</h4>
+                                <li>Cars</li>
+                                <li>Flats for rent</li>
+                                <li>Mobile Phones</li>
+                                <li>Jobs</li>
+                            </ul>
+                            <ul>
+                                <h4>POPULAR Category</h4>
+                                <li>Cars</li>
+                                <li>Flats for rent</li>
+                                <li>Mobile Phones</li>
+                                <li>Jobs</li>
+                            </ul>
+                        </div>
+                        <div class="follow_us">
+                            <h4 class="hello">FOLLOW US</h4>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="apps">
+                                <img src=" https://static.vecteezy.com/system/resources/previews/021/496/284/original/apple-app-store-icon-logo-symbol-white-design-mobile-illustration-with-black-background-free-vector.jpg"
+                                    height="50px" alt="">
+                                <img src=" https://static.vecteezy.com/system/resources/previews/021/496/110/original/google-play-mobile-symbol-logo-with-name-design-software-phone-illustration-with-black-background-free-vector.jpg"
+                                    height="50px">
+                                <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ss2Zy4BdUI2-oMyPGO3ZslTv0j8G0s-tgw&s"
+                                    width="220px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <p class="fop">Free Classifieds in Pakistan . © 2006-2023 OLX</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
